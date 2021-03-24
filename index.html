@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="style.js"></script>
+    <title>Cards</title>
+    <link rel="shortcut icon" type="image/jpg" href="images/favicon.jpg" />
+</head>
+
+<body>
+    <div id="overlay"></div>
+    <div class="wrapper">
+        <div id="noCards">
+            <div class="row">
+                <div class="col-md-9 order-md-1 order-sm-2 order-xs-2 deck-cards">
+                    <div class="card-deck">
+                        <div class="deck-title">
+
+                            <h1>Deck of Cards</h1>
+                        </div>
+                        <div class="deck-btn">
+
+
+                            <a href="javascript:void(0)" class="btn" onclick="shuffleCards()">Shuffle</a>
+                            <a href="javascript:void(0)" class="btn" onclick="drawCard(4)">Draw 4 Cards</a>
+                            <a href="javascript:void(0)" class="btn" onclick="drawCard(5)">Draw 5 Cards</a>
+                        </div>
+                        <div id="deck"></div>
+                    </div>
+                </div>
+                <div class="col-md-3 order-md-2 order-sm-1 order-xs-1 draw-card ">
+                    <div class="card-deck">
+                        <h1>Drawn Cards</h1>
+
+                        <div id="draw-deck"></div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div id="noCardsImg">
+            <div class="noCardscontent">
+                <img src="images/cards.png">
+                <h1>No More Deals</h1>
+                <a href="javascript:void(0)" class="btn" onclick="loadCards()">Restart</a>
+            </div>
+        </div>
+
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
